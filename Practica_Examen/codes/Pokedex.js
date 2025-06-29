@@ -56,8 +56,8 @@ function cargarPokemons(URL) {
 
             pokemons.forEach((pokemon) => {
                 const parts = pokemon.url.split("/");
-                const numero = parts[parts.length - 2];
-                const numeroFormateado = numero.toString().padStart(3, '0');
+                const numero = parts[parts.length - 2].toString();
+                const numeroFormateado = numero.padStart(3, '0');
                 const imagen = `https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/${numeroFormateado}.png`;
 
                 const col = document.createElement("div");
