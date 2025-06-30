@@ -25,13 +25,13 @@ function CargarDetallenPokemon(URL,name,img,gen){
             const altura = datos.height;
 
             // Obtener tipos
-            const tipos = datos.types.map(t => t.type.name).join(" - ");
+            const tipos = datos.types.map(t => t.type.name).join(" | ");
 
             // Obtener habilidades
-            const habilidades = datos.abilities.map(a => a.ability.name).join(" - ");
+            const habilidades = datos.abilities.map(a => a.ability.name).join(" | ");
 
             // Obtener solo 5 movimientos
-            const movimientos = datos.moves.slice(0, 5).map(m => m.move.name).join(" - ");
+            const movimientos = datos.moves.slice(0,10).map(m => m.move.name).join(" | ");
 
             const detalle = document.createElement("div");
                 detalle.innerHTML = `
