@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
     if(datos){
         CargarDetallenPokemon(datos.url, datos.name,datos.img,datos.gen);
     }else{
-        console.error("NOhay datos de Pokémon en localStorage");
+        console.error("NO hay datos de Pokémon en localStorage");
     }
 })
 
